@@ -2,19 +2,37 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
 }
 
 /**Geral**/
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+}
 
 body{
     background-color: #c2c2c2;
 }
 
-#container{
-    margin: 0 70px;
-    padding: 10px 0;
+#container {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 90%;
 }
+
+.modalidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .btn-vermelho{
     width: 328px;
@@ -448,7 +466,7 @@ hr{
 
 .informacoes img{
     width: 644px;
-    height: 436px;
+    height: auto;
     margin: 10px 20px 10px 0;
 }
 
@@ -637,6 +655,7 @@ hr{
     gap: 20px;
     height: 100%;
     max-width: 460px;
+    margin: 0 auto;
 }
 
 /**Plano 2**/
@@ -693,6 +712,7 @@ hr{
     height: 100%;
     gap: 20px;
     max-width: 460px;
+    margin: 0 auto;
 }
 
 .plano-black h2{
@@ -755,6 +775,7 @@ hr{
     gap: 20px;
     height: 100%;
     max-width: 460px;
+    margin: 0 auto;
 }
 
 /**Quadro 7**/
@@ -849,14 +870,14 @@ hr{
     text-align: right;
 }
 
-.menu-mobile li a:hover{
+.menu-mobile li a:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
 
 #btn-menu{
-    width: 10%;
-    height: 10%;
+    width: 30%;
+    height: 30%;
     border: 2px solid black;
     color:#c2c2c2;
     background: transparent;
@@ -950,6 +971,7 @@ hr{
 
     .menu img{
         width: 60%;
+        max-width: 333px;
         justify-content: flex-start;
     }
 
@@ -1058,7 +1080,7 @@ hr{
     }
 
     .parte3 p{
-        font-size: 12px;
+        font-size: 18px;
         text-align: center;
     }
 
